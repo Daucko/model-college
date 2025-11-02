@@ -13,7 +13,13 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { TimetableModal } from '@/components/ui/timetable-modal';
-import { Calendar, Lock, School, ArrowRight } from 'lucide-react';
+import {
+  Calendar,
+  Lock,
+  School,
+  ArrowRight,
+  GraduationCap,
+} from 'lucide-react';
 import Link from 'next/link';
 
 interface Department {
@@ -124,7 +130,7 @@ export default function AcademicsPage() {
                   <CardContent className="mt-auto">
                     <Button
                       asChild
-                      className="w-full bg-orange-500 hover:bg-accent/90"
+                      className="w-full bg-orange-500 hover:bg-orange-500/90"
                     >
                       <a href={section.href}>
                         <span>Learn More</span>
@@ -148,7 +154,7 @@ export default function AcademicsPage() {
                   <Link href="/academics/departments" className="block p-3">
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
-                        <School className="h-8 w-8 text-orange-500" />
+                        <GraduationCap className="size-10 text-orange-500" />
                         <CardTitle className="text-xl">
                           Our Departments
                         </CardTitle>

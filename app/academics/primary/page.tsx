@@ -16,7 +16,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Download, School, ChevronDown, ChevronUp } from 'lucide-react';
+import {
+  Download,
+  //   School,
+  ChevronDown,
+  ChevronUp,
+  GraduationCap,
+} from 'lucide-react';
 
 export default function PrimarySectionPage() {
   const [openAccordion, setOpenAccordion] = useState<string[]>(['curriculum']);
@@ -201,16 +207,16 @@ export default function PrimarySectionPage() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button
                       onClick={handleDownloadProspectus}
-                      className="bg-accent hover:bg-accent/90 h-12 px-6 min-w-[160px]"
+                      className="bg-orange-500 hover:bg-orange-400 h-12 px-6 min-w-40"
                     >
-                      <Download className="mr-2 h-4 w-4" />
+                      <Download className="size-5" />
                       Prospectus
                     </Button>
                     <Button
                       onClick={handleAdmissionsClick}
-                      className="bg-primary hover:bg-primary/90 h-12 px-6 min-w-[160px]"
+                      className="bg-primary hover:bg-primary/90 h-12 px-6 min-w-40"
                     >
-                      <School className="mr-2 h-4 w-4" />
+                      <GraduationCap className="size-6" />
                       Admissions
                     </Button>
                   </div>
