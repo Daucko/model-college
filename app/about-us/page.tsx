@@ -22,6 +22,7 @@ import {
   Linkedin,
   Instagram,
 } from 'lucide-react';
+import Link from 'next/link';
 
 interface FeatureCard {
   id: string;
@@ -50,7 +51,7 @@ export default function AboutPage() {
       description:
         'Our core values and educational philosophy guide our commitment to nurturing future leaders and fostering a passion for lifelong discovery.',
       buttonText: 'Learn More',
-      href: '/about/mission',
+      href: '/about-us/mission',
     },
     {
       id: 'principal',
@@ -59,7 +60,7 @@ export default function AboutPage() {
       description:
         'A warm welcome from our principal, sharing insights into our educational approach, community spirit, and dedication to student success.',
       buttonText: 'Read the Message',
-      href: '/about/principal',
+      href: '/about-us/principal',
     },
     {
       id: 'leadership',
@@ -68,7 +69,7 @@ export default function AboutPage() {
       description:
         'Meet the dedicated board members and administrators whose vision and expertise guide our college towards a future of excellence and innovation.',
       buttonText: 'Meet Our Leaders',
-      href: '/about/leadership',
+      href: '/about-us/leadership',
     },
     {
       id: 'accreditation',
@@ -77,7 +78,7 @@ export default function AboutPage() {
       description:
         'We are proud to be recognized by leading educational bodies for our high standards, ensuring a credible and quality education for all our students.',
       buttonText: 'View Accreditations',
-      href: '/about/accreditation',
+      href: '/about-us/accreditation',
     },
     {
       id: 'facilities',
@@ -86,15 +87,15 @@ export default function AboutPage() {
       description:
         'Explore our modern classrooms, advanced labs, extensive library, and vibrant sports facilities designed to support a holistic learning experience.',
       buttonText: 'Explore Our Campus',
-      href: '/about/facilities',
+      href: '/about-us/facilities',
     },
   ];
 
-  const handleCardClick = (href: string) => {
-    // Navigate to the specific about page
-    window.location.href = href;
-    console.log(href);
-  };
+  // const handleCardClick = (href: string) => {
+  //   // Navigate to the specific about page
+  //   window.location.href = href;
+  //   console.log(href);
+  // };
 
   return (
     <div className="min-h-screen bg-background-light dark:bg-background-dark">
@@ -124,8 +125,8 @@ export default function AboutPage() {
           {featureCards.map((card) => (
             <Card
               key={card.id}
-              className="flex flex-col h-full hover:shadow-xl transition-shadow duration-300 cursor-pointer"
-              onClick={() => handleCardClick(card.href)}
+              className="flex flex-col h-full hover:shadow-xl transition-shadow duration-300"
+              // onClick={() => handleCardClick(card.href)}
             >
               <CardHeader className="flex flex-col items-center text-center pb-4">
                 <div className="text-orange-500 mb-4">
@@ -141,12 +142,13 @@ export default function AboutPage() {
                 </CardDescription>
                 <Button
                   className="mt-6 w-full bg-orange-500 hover:bg-orange-600 text-white"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleCardClick(card.href);
-                  }}
+                  // onClick={(e) => {
+                  //   e.stopPropagation();
+                  //   handleCardClick(card.href);
+                  // }}
+                  asChild
                 >
-                  {card.buttonText}
+                  <Link href={card.href}>{card.buttonText}</Link>
                 </Button>
               </CardContent>
             </Card>
