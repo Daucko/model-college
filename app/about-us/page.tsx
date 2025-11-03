@@ -41,7 +41,7 @@ export default function AboutPage() {
       description:
         'Founded with a vision for excellence, learn about the rich history and founding principles that have shaped Model College into a beacon of learning.',
       buttonText: 'Learn More',
-      href: '/about/history',
+      href: '/about-us/history',
     },
     {
       id: 'mission',
@@ -93,6 +93,7 @@ export default function AboutPage() {
   const handleCardClick = (href: string) => {
     // Navigate to the specific about page
     window.location.href = href;
+    console.log(href);
   };
 
   return (
@@ -127,19 +128,19 @@ export default function AboutPage() {
               onClick={() => handleCardClick(card.href)}
             >
               <CardHeader className="flex flex-col items-center text-center pb-4">
-                <div className="text-accent mb-4">
-                  <card.icon className="h-12 w-12" />
+                <div className="text-orange-500 mb-4">
+                  <card.icon className="h-12 w-12 text-orange-500" />
                 </div>
                 <CardTitle className="text-primary dark:text-blue-300 text-xl">
                   {card.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex flex-col grow">
-                <CardDescription className="text-secondary dark:text-gray-400 text-sm leading-normal grow">
+                <CardDescription className="text-primary dark:text-gray-400 text-sm leading-normal grow">
                   {card.description}
                 </CardDescription>
                 <Button
-                  className="mt-6 w-full bg-accent hover:bg-accent/90 text-white"
+                  className="mt-6 w-full bg-orange-500 hover:bg-orange-600 text-white"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleCardClick(card.href);
@@ -164,13 +165,13 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="bg-accent/20 p-2 rounded-lg">
-                    <School className="h-6 w-6 text-accent" />
+                    <School className="h-6 w-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-secondary dark:text-white font-semibold">
+                    <h3 className="text-primary dark:text-white font-semibold">
                       Comprehensive Education
                     </h3>
-                    <p className="text-secondary dark:text-gray-400 text-sm mt-1">
+                    <p className="text-primary dark:text-gray-400 text-sm mt-1">
                       From KG to Secondary, we provide a seamless educational
                       journey with focused learning at every stage.
                     </p>
@@ -178,13 +179,13 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="bg-accent/20 p-2 rounded-lg">
-                    <Users className="h-6 w-6 text-accent" />
+                    <Users className="h-6 w-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-secondary dark:text-white font-semibold">
+                    <h3 className="text-primary dark:text-white font-semibold">
                       Experienced Faculty
                     </h3>
-                    <p className="text-secondary dark:text-gray-400 text-sm mt-1">
+                    <p className="text-primary dark:text-gray-400 text-sm mt-1">
                       Our dedicated teachers are committed to nurturing each
                       student's unique potential and talents.
                     </p>
@@ -192,13 +193,13 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="bg-accent/20 p-2 rounded-lg">
-                    <Building className="h-6 w-6 text-accent" />
+                    <Building className="h-6 w-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-secondary dark:text-white font-semibold">
+                    <h3 className="text-primary dark:text-white font-semibold">
                       Modern Infrastructure
                     </h3>
-                    <p className="text-secondary dark:text-gray-400 text-sm mt-1">
+                    <p className="text-primary dark:text-gray-400 text-sm mt-1">
                       State-of-the-art facilities that create an optimal
                       environment for learning and growth.
                     </p>
@@ -210,7 +211,7 @@ export default function AboutPage() {
               <h3 className="text-primary dark:text-white text-2xl font-bold mb-4">
                 Our Commitment
               </h3>
-              <p className="text-secondary dark:text-gray-300 mb-6">
+              <p className="text-primary dark:text-gray-300 mb-6">
                 At Model College, we are committed to providing an education
                 that goes beyond textbooks. We focus on developing well-rounded
                 individuals who are prepared to face the challenges of tomorrow
@@ -221,7 +222,7 @@ export default function AboutPage() {
                   <div className="text-primary dark:text-white text-2xl font-bold">
                     1000+
                   </div>
-                  <div className="text-secondary dark:text-gray-400 text-sm">
+                  <div className="text-primary dark:text-gray-400 text-sm">
                     Students
                   </div>
                 </div>
@@ -229,7 +230,7 @@ export default function AboutPage() {
                   <div className="text-primary dark:text-white text-2xl font-bold">
                     50+
                   </div>
-                  <div className="text-secondary dark:text-gray-400 text-sm">
+                  <div className="text-primary dark:text-gray-400 text-sm">
                     Faculty Members
                   </div>
                 </div>
@@ -237,7 +238,7 @@ export default function AboutPage() {
                   <div className="text-primary dark:text-white text-2xl font-bold">
                     15+
                   </div>
-                  <div className="text-secondary dark:text-gray-400 text-sm">
+                  <div className="text-primary dark:text-gray-400 text-sm">
                     Years of Excellence
                   </div>
                 </div>
@@ -245,7 +246,7 @@ export default function AboutPage() {
                   <div className="text-primary dark:text-white text-2xl font-bold">
                     10+
                   </div>
-                  <div className="text-secondary dark:text-gray-400 text-sm">
+                  <div className="text-primary dark:text-gray-400 text-sm">
                     Academic Programs
                   </div>
                 </div>
