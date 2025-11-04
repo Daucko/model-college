@@ -29,7 +29,7 @@ export default function Admissions() {
         'Learn about our step-by-step application and enrollment journey, from initial inquiry to final acceptance.',
       icon: <ListChecks className="h-9 w-9 text-orange-500" />,
       buttonText: 'Learn More',
-      href: '#',
+      href: '/admissions/process',
     },
     {
       title: 'Eligibility Criteria',
@@ -37,7 +37,7 @@ export default function Admissions() {
         'View the academic, age, and other requirements for each of our sections, from KG to Secondary levels.',
       icon: <Scale className="h-9 w-9 text-orange-500" />,
       buttonText: 'Learn More',
-      href: '#',
+      href: 'admissions/eligibility',
     },
     {
       title: 'Fee Structure',
@@ -45,7 +45,7 @@ export default function Admissions() {
         'Find detailed information on tuition, registration, and other fees for Primary and Secondary levels.',
       icon: <Receipt className="h-9 w-9 text-orange-500" />,
       buttonText: 'Learn More',
-      href: '#',
+      href: 'admissions/fees',
     },
     {
       title: 'Application Form',
@@ -53,7 +53,7 @@ export default function Admissions() {
         'Access the online form or download a printable PDF to begin your application process today.',
       icon: <FileText className="h-9 w-9 text-orange-500" />,
       buttonText: 'Download Form',
-      href: '#',
+      href: 'admissions/application',
     },
     {
       title: 'Important Dates',
@@ -61,7 +61,7 @@ export default function Admissions() {
         'Stay informed about key deadlines for applications, entrance tests, interviews, and enrollment.',
       icon: <Calendar className="h-9 w-9 text-orange-500" />,
       buttonText: 'View Calendar',
-      href: '#',
+      href: 'admissions/important-dates',
     },
     {
       title: 'FAQs',
@@ -69,7 +69,7 @@ export default function Admissions() {
         'Find answers to common questions about our admissions process, curriculum, and campus life.',
       icon: <HelpCircle className="h-9 w-9 text-orange-500" />,
       buttonText: 'Read FAQs',
-      href: '#',
+      href: 'admissions/faqs',
     },
     {
       title: 'Scholarships & Financial Aid',
@@ -77,7 +77,7 @@ export default function Admissions() {
         'Explore the financial support options and scholarships available to new and returning students.',
       icon: <GraduationCap className="h-9 w-9 text-orange-500" />,
       buttonText: 'Learn More',
-      href: '#',
+      href: 'admissions/scholarships',
     },
     {
       title: 'Transfer Students',
@@ -85,7 +85,7 @@ export default function Admissions() {
         'Find dedicated information for students wishing to transfer to Model College from other institutions.',
       icon: <Users className="h-9 w-9 text-orange-500" />,
       buttonText: 'Learn More',
-      href: '#',
+      href: 'admissions/transfers',
     },
   ];
 
