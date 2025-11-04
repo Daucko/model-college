@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ZoomIn, Play, Panorama, School } from 'lucide-react';
+import { ZoomIn, Play, GalleryVertical, School } from 'lucide-react';
 import { useState } from 'react';
 
 export default function GalleryPage() {
@@ -225,7 +225,7 @@ export default function GalleryPage() {
                     interactive virtual tour.
                   </p>
                   <Button className="mt-6 h-12 px-6 bg-orange-500 hover:bg-orange-600 text-white text-base font-bold">
-                    <Panorama className="h-5 w-5 mr-2" />
+                    <GalleryVertical className="h-5 w-5 mr-2" />
                     Take a Virtual Tour
                   </Button>
                 </div>
