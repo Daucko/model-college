@@ -11,6 +11,7 @@ import {
   Download,
   ArrowRight,
 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ParentsPage() {
   const resources = [
@@ -80,8 +81,11 @@ export default function ParentsPage() {
                   your child&apos;s journey at Model College.
                 </p>
               </div>
-              <Button className="h-12 px-6 text-base font-bold shadow-sm">
-                Parent Portal Login
+              <Button
+                className="h-12 px-6 text-base font-bold shadow-sm"
+                asChild
+              >
+                <Link href="/parents/portal-login">Parent Portal Login</Link>
               </Button>
             </div>
 
