@@ -62,13 +62,13 @@ export default function StudentsMainPage() {
       icon: Shirt,
       title: 'Uniform Guidelines',
       description: 'View the official dress code.',
-      href: '#',
+      href: '/students/uniform-guidelines',
     },
     {
       icon: Bus,
       title: 'Transportation',
       description: 'Find bus routes and schedules.',
-      href: '#',
+      href: '/students/transportation',
     },
   ];
 
@@ -162,20 +162,22 @@ export default function StudentsMainPage() {
                   key={index}
                   className="group cursor-pointer transition-shadow hover:shadow-md"
                 >
-                  <CardContent className="p-4">
-                    <div className="flex items-center gap-4">
-                      <link.icon className="h-6 w-6 text-primary" />
-                      <div className="flex-1">
-                        <h4 className="font-medium text-foreground">
-                          {link.title}
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          {link.description}
-                        </p>
+                  <Link href={link.href}>
+                    <CardContent className="p-4">
+                      <div className="flex items-center gap-4">
+                        <link.icon className="h-6 w-6 text-primary" />
+                        <div className="flex-1">
+                          <h4 className="font-medium text-foreground">
+                            {link.title}
+                          </h4>
+                          <p className="text-sm text-muted-foreground">
+                            {link.description}
+                          </p>
+                        </div>
+                        <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-orange-500 transition-colors" />
                       </div>
-                      <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-orange-500 transition-colors" />
-                    </div>
-                  </CardContent>
+                    </CardContent>
+                  </Link>
                 </Card>
               ))}
             </div>
