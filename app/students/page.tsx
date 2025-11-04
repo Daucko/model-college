@@ -12,37 +12,48 @@ import {
   Bus,
   ArrowRight,
   GraduationCap,
+  House,
+  Gavel,
+  GraduationCapIcon,
+  Landmark,
 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function StudentsMainPage() {
   const featureCards = [
     {
-      icon: School,
+      icon: GraduationCapIcon,
       title: 'Student Life',
       description: 'Discover campus life, facilities, and daily routines.',
-      href: '/students/life',
+      href: '/students/student-life',
     },
     {
       icon: Users,
       title: 'Clubs & Societies',
       description:
         'Find your passion and get involved in extracurricular activities.',
-      href: '#',
+      href: '/students/clubs-and-societies',
     },
     {
-      icon: Building,
+      icon: Landmark,
       title: 'Student Council',
       description:
         'Learn about your student government and how to get involved.',
-      href: '#',
+      href: '/students/student-council',
     },
     {
-      icon: Scale,
+      icon: Gavel,
       title: 'Code of Conduct',
       description:
         'Understand the school rules and expectations for all students.',
       href: '#',
+    },
+    {
+      icon: House,
+      title: 'House System',
+      description:
+        'Understand the house system and how it fosters community and competition.',
+      href: '/students/house-system',
     },
   ];
 
