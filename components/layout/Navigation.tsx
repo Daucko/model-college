@@ -28,7 +28,7 @@ const navigationItems = [
   { href: '/students', label: 'Students' },
   { href: '/parents', label: 'Parents' },
   { href: '/gallery', label: 'Gallery' },
-  { href: '/news-events', label: 'News & Events' },
+  { href: '/news-and-events', label: 'News & Events' },
   { href: '/contact-us', label: 'Contact Us' },
 ];
 
