@@ -53,7 +53,7 @@ export default function ParentsPage() {
       description:
         'Guidelines on how to best contact teachers and staff for effective communication.',
       linkText: 'See Guidelines',
-      href: '#',
+      href: '/parents/communication',
     },
     {
       icon: Download,
