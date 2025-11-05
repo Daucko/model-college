@@ -45,7 +45,7 @@ export default function ParentsPage() {
       description:
         "Find tips and resources for supporting your child's academic and personal growth.",
       linkText: 'Get Tips',
-      href: '#',
+      href: '/parents/support-your-child',
     },
     {
       icon: MessageSquare,
