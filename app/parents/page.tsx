@@ -21,7 +21,7 @@ export default function ParentsPage() {
       description:
         'Your guide to school rules, procedures, and expectations for a successful academic year.',
       linkText: 'Read Handbook',
-      href: '#',
+      href: '/parents/parent-handbook',
     },
     {
       icon: Users,
@@ -29,7 +29,7 @@ export default function ParentsPage() {
       description:
         'Join the PTA, view meeting schedules, and learn how you can get involved in our community.',
       linkText: 'Learn More',
-      href: '#',
+      href: '/parents/pta',
     },
     {
       icon: Shield,
@@ -37,7 +37,7 @@ export default function ParentsPage() {
       description:
         'Access key policies on attendance, leave, student conduct, and academic integrity.',
       linkText: 'View Policies',
-      href: '#',
+      href: '/parents/important-policies',
     },
     {
       icon: HeartHandshake,
