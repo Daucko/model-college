@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, Users, MapPin, Phone } from 'lucide-react';
+import Link from 'next/link';
 
 export default function PrincipalMessage() {
   return (
@@ -32,9 +33,9 @@ export default function PrincipalMessage() {
         {/* Page Content */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           {/* Left Column: Image */}
-          <div className="lg:w-1/3 flex-shrink-0">
+          <div className="lg:w-1/3 shrink-0">
             <div className="relative">
-              <div className="aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
+              <div className="aspect-3/4 overflow-hidden rounded-xl shadow-lg">
                 <div
                   className="w-full h-full bg-center bg-no-repeat bg-cover"
                   style={{
@@ -121,16 +122,22 @@ export default function PrincipalMessage() {
               <Button
                 variant="outline"
                 className="h-11 px-5 bg-primary/10 hover:bg-primary/20 text-primary"
+                asChild
               >
-                <span>Our Vision & Mission</span>
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <Link href="/about-us/mission">
+                  <span>Our Vision & Mission</span>
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
               <Button
                 variant="outline"
-                className="h-11 px-5 bg-orange-500/10 hover:bg-orange-500/20 text-orange-500"
+                className="h-11 px-5 bg-orange-500/10 hover:bg-orange-500/20 text-orange-500 border border-orange-500/30"
+                asChild
               >
-                <span>Meet the Leadership</span>
-                <Users className="ml-2 h-4 w-4" />
+                <Link href="/about-us/leadership">
+                  <span>Meet the Leadership</span>
+                  <Users className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </div>
           </div>
