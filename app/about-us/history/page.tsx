@@ -35,7 +35,7 @@ export default function HistoryPage() {
 
           {/* Page Heading */}
           <div className="mb-8">
-            <h1 className="text-primary text-4xl md:text-5xl font-black tracking-tight">
+            <h1 className="text-primary dark:text-blue-300 text-4xl md:text-5xl font-black tracking-tight">
               Our Story
             </h1>
           </div>
@@ -56,7 +56,7 @@ export default function HistoryPage() {
           {/* Section: Founding */}
           <div className="grid md:grid-cols-5 gap-8 items-center mb-16">
             <div className="md:col-span-3">
-              <h2 className="text-primary text-3xl font-bold mb-4">
+              <h2 className="text-primary dark:text-blue-300 text-3xl font-bold mb-4">
                 The Founding Vision
               </h2>
               <p className="mb-4">
@@ -89,7 +89,7 @@ export default function HistoryPage() {
           {/* Section: Pull Quote */}
           <Card className="my-16 text-center bg-muted/50">
             <CardContent className="p-8">
-              <blockquote className="text-2xl md:text-3xl font-light italic text-primary leading-snug max-w-3xl mx-auto">
+              <blockquote className="text-2xl md:text-3xl font-light italic text-primary dark:text-blue-300 leading-snug max-w-3xl mx-auto">
                 &ldquo;Education is not the filling of a pail, but the lighting
                 of a fire.&rdquo;
               </blockquote>
@@ -101,14 +101,14 @@ export default function HistoryPage() {
 
           {/* Section: Timeline */}
           <div className="mb-16">
-            <h2 className="text-primary text-3xl font-bold mb-8 text-center">
+            <h2 className="text-primary dark:text-blue-300 text-3xl font-bold mb-8 text-center">
               Key Milestones
             </h2>
             <div className="relative pl-10 border-l-2 border-gray-200 dark:border-gray-700">
               {/* Timeline Item */}
               <div className="timeline-item mb-12 relative">
                 {/*<div className="absolute top-4 -left-2.5 w-3 h-3 bg-accent rounded-full border-2 border-white dark:border-background-dark"></div> */}
-                <h3 className="text-primary text-xl font-bold">
+                <h3 className="text-primary dark:text-blue-300 text-xl font-bold">
                   1953 - The Beginning
                 </h3>
                 <p className="mt-1 text-gray-700 dark:text-gray-300">
@@ -120,7 +120,7 @@ export default function HistoryPage() {
               {/* Timeline Item */}
               <div className="timeline-item mb-12 relative">
                 {/* <div className="absolute top-4 -left-2.5 w-3 h-3 bg-accent rounded-full border-2 border-white dark:border-background-dark"></div> */}
-                <h3 className="text-primary text-xl font-bold">
+                <h3 className="text-primary dark:text-blue-300 text-xl font-bold">
                   1965 - Primary Section Added
                 </h3>
                 <p className="mt-1 text-gray-700 dark:text-gray-300">
@@ -133,7 +133,7 @@ export default function HistoryPage() {
               {/* Timeline Item */}
               <div className="timeline-item mb-12 relative">
                 {/* <div className="absolute top-4 -left-2.5 w-3 h-3 bg-accent rounded-full border-2 border-white dark:border-background-dark"></div> */}
-                <h3 className="text-primary text-xl font-bold">
+                <h3 className="text-primary dark:text-blue-300 text-xl font-bold">
                   1978 - First Graduating Class
                 </h3>
                 <p className="mt-1 text-gray-700 dark:text-gray-300">
@@ -145,7 +145,7 @@ export default function HistoryPage() {
               {/* Timeline Item */}
               <div className="timeline-item mb-12 relative">
                 {/* <div className="absolute top-4 -left-2.5 w-3 h-3 bg-accent rounded-full border-2 border-white dark:border-background-dark"></div> */}
-                <h3 className="text-primary text-xl font-bold">
+                <h3 className="text-primary dark:text-blue-300 text-xl font-bold">
                   1995 - Campus Expansion
                 </h3>
                 <p className="mt-1 text-gray-700 dark:text-gray-300">
@@ -157,7 +157,7 @@ export default function HistoryPage() {
               {/* Timeline Item */}
               <div className="timeline-item relative">
                 {/* <div className="absolute top-4 -left-2.5 w-3 h-3 bg-accent rounded-full border-2 border-white dark:border-background-dark"></div> */}
-                <h3 className="text-primary text-xl font-bold">
+                <h3 className="text-primary dark:text-blue-300 text-xl font-bold">
                   2023 - 70 Years of Excellence
                 </h3>
                 <p className="mt-1 text-gray-700 dark:text-gray-300">
@@ -172,7 +172,7 @@ export default function HistoryPage() {
 
           {/* Section: Gallery */}
           <div className="my-16">
-            <h2 className="text-primary text-3xl font-bold mb-8 text-center">
+            <h2 className="text-primary dark:text-blue-300 text-3xl font-bold mb-8 text-center">
               A Journey Through Time
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -220,7 +220,7 @@ export default function HistoryPage() {
           {/* Section: Future */}
           <Card className="bg-muted/50 border-none">
             <CardContent className="p-8">
-              <h2 className="text-primary text-3xl font-bold mb-4">
+              <h2 className="text-primary dark:text-blue-300 text-3xl font-bold mb-4">
                 Looking to the Future
               </h2>
               <p className="leading-relaxed">

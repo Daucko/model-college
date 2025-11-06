@@ -41,7 +41,7 @@ export function HeroSection() {
     <section
       className="hero-section text-white pt-24 pb-16 min-h-[600px] flex items-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbdN8QWVDHLbDyi0UM2BQzwgwtL6oGQ5wcnERlBK_00T82QfObUlfJzBjcPYfJnK3_BBS1UDrb1yKd3Lyw8gVMC_dFxdCE0TefHhK9IU9hSHCFItvSQu6Gt6DqdpAeIcgfY6ERPoVVB9-VVLhbOzwYihw1O6IvTWcFMX1XDiJYC8baEGEfvmfVPyK5QELb5_d3_Iu9c2k3YuBcFtig8MTogoOwXObSc5b8GJ6TDMb718FELRr7zvyPTfTzLklUFZH21YU1_kbd38E")`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -68,7 +68,7 @@ export function HeroSection() {
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all"
                 asChild
               >
-                <Link href="/about-us/principals-message">
+                <Link href="/about-us/principal">
                   Read Principal&apos;s Message
                 </Link>
               </Button>
@@ -79,7 +79,7 @@ export function HeroSection() {
                 className="border-white bg-orange-500 text-white hover:bg-white/10 font-semibold py-3 px-6 rounded-lg transition-all"
                 asChild
               >
-                <Link href="/admissions">Apply Now</Link>
+                <Link href="/admissions/application">Apply Now</Link>
               </Button>
             </div>
 

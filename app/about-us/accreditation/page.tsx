@@ -3,6 +3,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 interface AccreditationItem {
   title: string;
@@ -140,7 +141,7 @@ export default function AccreditationAndAffiliations() {
                 className="bg-orange-500 hover:bg-orange-600 text-white"
                 asChild
               >
-                <a href="#">Contact Admissions</a>
+                <Link href="/admissions">Contact Admissions</Link>
               </Button>
               <Button
                 size="lg"

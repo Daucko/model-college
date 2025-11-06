@@ -12,14 +12,14 @@ export default function PrincipalMessage() {
         {/* Breadcrumbs */}
         <div className="flex flex-wrap gap-2 mb-8 text-sm md:text-base">
           <a
-            className="text-muted-foreground hover:text-primary transition-colors font-medium"
+            className="text-muted-foreground hover:text-primary dark:text-blue-300 transition-colors font-medium"
             href="#"
           >
             Home
           </a>
           <span className="text-muted-foreground">/</span>
           <a
-            className="text-muted-foreground hover:text-primary transition-colors font-medium"
+            className="text-muted-foreground hover:text-primary dark:text-blue-300 transition-colors font-medium"
             href="#"
           >
             About Us
@@ -45,7 +45,7 @@ export default function PrincipalMessage() {
               </div>
               <div className="absolute -bottom-4 -right-4 bg-primary/20 backdrop-blur-sm p-4 rounded-xl shadow-md">
                 <svg
-                  className="h-10 w-10 text-primary"
+                  className="h-10 w-10 text-primary dark:text-blue-300"
                   fill="none"
                   viewBox="0 0 48 48"
                   xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ export default function PrincipalMessage() {
           <div className="lg:w-2/3">
             {/* Page Heading */}
             <div className="mb-8">
-              <h1 className="text-primary text-4xl md:text-5xl font-black leading-tight tracking-tight">
+              <h1 className="text-primary dark:text-blue-300 text-4xl md:text-5xl font-black leading-tight tracking-tight">
                 A Message from Our Principal
               </h1>
               <div className="w-24 h-1.5 bg-orange-500 mt-4 rounded-full"></div>
@@ -121,7 +121,7 @@ export default function PrincipalMessage() {
             <div className="mt-12 flex flex-wrap gap-4">
               <Button
                 variant="outline"
-                className="h-11 px-5 bg-primary/10 hover:bg-primary/20 text-primary"
+                className="h-11 px-5 bg-primary/10 hover:bg-primary/20 text-primary dark:text-blue-300"
                 asChild
               >
                 <Link href="/about-us/mission">
@@ -131,7 +131,7 @@ export default function PrincipalMessage() {
               </Button>
               <Button
                 variant="outline"
-                className="h-11 px-5 bg-orange-500/10 hover:bg-orange-500/20 text-orange-500 border border-orange-500/30"
+                className="h-11 px-5 bg-accent/10 hover:bg-accent/20 text-accent border border-orange-500/30"
                 asChild
               >
                 <Link href="/about-us/leadership">
@@ -146,12 +146,12 @@ export default function PrincipalMessage() {
         {/* Contact Info Section */}
         <Card className="mt-16">
           <CardContent className="p-8">
-            <h3 className="text-2xl font-bold text-primary mb-6">
+            <h3 className="text-2xl font-bold text-primary dark:text-blue-300 mb-6">
               Get In Touch
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-primary mt-0.5" />
+                <MapPin className="h-5 w-5 text-primary dark:text-blue-300 mt-0.5" />
                 <div>
                   <p className="font-semibold">Address</p>
                   <p className="text-muted-foreground">
@@ -160,7 +160,7 @@ export default function PrincipalMessage() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-primary mt-0.5" />
+                <Phone className="h-5 w-5 text-primary dark:text-blue-300 mt-0.5" />
                 <div>
                   <p className="font-semibold">Phone</p>
                   <p className="text-muted-foreground">(123) 456-7890</p>

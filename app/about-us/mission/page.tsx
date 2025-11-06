@@ -12,7 +12,7 @@ export default function MissionAndVision() {
           {/* Breadcrumbs */}
           <div className="flex flex-wrap gap-2">
             <a
-              className="text-muted-foreground hover:text-primary text-sm font-medium leading-normal"
+              className="text-muted-foreground hover:text-primary dark:text-blue-300 text-sm font-medium leading-normal"
               href="#"
             >
               Home
@@ -21,7 +21,7 @@ export default function MissionAndVision() {
               /
             </span>
             <a
-              className="text-muted-foreground hover:text-primary text-sm font-medium leading-normal"
+              className="text-muted-foreground hover:text-primary dark:text-blue-300 text-sm font-medium leading-normal"
               href="#"
             >
               About Us
@@ -36,14 +36,14 @@ export default function MissionAndVision() {
 
           {/* Page Heading */}
           <div className="flex flex-wrap justify-between gap-3">
-            <h1 className="text-primary text-4xl md:text-5xl font-black leading-tight tracking-tighter">
+            <h1 className="text-primary dark:text-blue-300 text-4xl md:text-5xl font-black leading-tight tracking-tighter">
               Mission & Vision
             </h1>
           </div>
 
           {/* Mission Section */}
           <section className="flex flex-col gap-4">
-            <h2 className="text-primary text-2xl md:text-3xl font-bold tracking-tight">
+            <h2 className="text-primary dark:text-blue-300 text-2xl md:text-3xl font-bold tracking-tight">
               Our Mission
             </h2>
             <blockquote className="border-l-4 border-accent pl-6 py-2">
@@ -67,7 +67,7 @@ export default function MissionAndVision() {
 
           {/* Vision Section */}
           <section className="flex flex-col gap-4">
-            <h2 className="text-primary text-2xl md:text-3xl font-bold tracking-tight">
+            <h2 className="text-primary dark:text-blue-300 text-2xl md:text-3xl font-bold tracking-tight">
               Our Vision
             </h2>
             <blockquote className="border-l-4 border-accent pl-6 py-2">
@@ -89,7 +89,7 @@ export default function MissionAndVision() {
 
           {/* Core Values Section */}
           <section className="flex flex-col gap-6">
-            <h2 className="text-primary text-2xl md:text-3xl font-bold tracking-tight">
+            <h2 className="text-primary dark:text-blue-300 text-2xl md:text-3xl font-bold tracking-tight">
               Our Core Values
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

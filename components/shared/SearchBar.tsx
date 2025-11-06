@@ -5,22 +5,9 @@ import { useRouter } from 'next/navigation';
 import { Search, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import {
-  Command,
-  CommandDialog,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from '@/components/ui/command';
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
+// import { VisuallyHidden } from '@/components/ui/visually-hidden';
 
-// Mock search data - in a real app, this would come from an API
 const searchSuggestions = [
   { id: 1, title: 'Admissions Process', url: '/admissions' },
   { id: 2, title: 'Academic Calendar', url: '/academics/calendar' },
@@ -60,10 +47,9 @@ export function SearchBar() {
     item.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // Mobile/Desktop optimized search
   return (
     <>
-      {/* Desktop Search - Compact */}
+      {/* Desktop Search */}
       <div className="hidden md:flex items-center">
         {!isExpanded ? (
           <Button
@@ -76,7 +62,7 @@ export function SearchBar() {
             <span className="sr-only">Search</span>
           </Button>
         ) : (
-          <div className="flex items-center gap-2 bg-background border rounded-lg pl-3 pr-1 py-1">
+          <div className="flex items-center gap-2 bg-background border rounded-lg pl-3 pr-1 py-1 animate-in fade-in-0 zoom-in-95">
             <Search className="h-4 w-4 text-muted-foreground" />
             <Input
               type="text"
@@ -92,7 +78,7 @@ export function SearchBar() {
                   setSearchQuery('');
                 }
               }}
-              className="h-7 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 w-48"
+              className="h-7 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 w-32 lg:w-48 transition-all duration-200"
               autoFocus
             />
             <Button
@@ -110,7 +96,7 @@ export function SearchBar() {
         )}
       </div>
 
-      {/* Mobile Search - Always use dialog */}
+      {/* Mobile Search */}
       <div className="md:hidden">
         <Button
           variant="ghost"
@@ -122,40 +108,61 @@ export function SearchBar() {
           <span className="sr-only">Search</span>
         </Button>
 
-        <CommandDialog open={open} onOpenChange={setOpen}>
-          <Command>
-            <div className="flex items-center border-b px-3">
-              <CommandInput
+        {/* Mobile Search Dialog */}
+        <Dialog open={open} onOpenChange={setOpen}>
+          <DialogContent className="sm:max-w-md p-0 gap-0">
+            {/* <VisuallyHidden> */}
+            <DialogTitle className="sr-only">Search Model College</DialogTitle>
+            {/* </VisuallyHidden> */}
+            <div className="flex items-center border-b p-4">
+              <Search className="h-4 w-4 text-muted-foreground mr-2" />
+              <Input
+                type="text"
                 placeholder="Search Model College..."
                 value={searchQuery}
-                onValueChange={setSearchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    handleSearch(searchQuery);
+                  }
+                }}
+                className="flex-1 border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+                autoFocus
               />
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setOpen(false)}
+                className="h-7 w-7 p-0 ml-2"
+              >
+                <X className="h-4 w-4" />
+              </Button>
             </div>
-            <CommandList>
-              <CommandEmpty>No results found.</CommandEmpty>
-              {filteredSuggestions.length > 0 && (
-                <CommandGroup heading="Quick Links">
-                  {filteredSuggestions.map((suggestion) => (
-                    <CommandItem
-                      key={suggestion.id}
-                      value={suggestion.title}
-                      onSelect={() => handleSuggestionSelect(suggestion.url)}
-                      className="cursor-pointer"
-                    >
-                      <Search className="mr-2 h-4 w-4" />
-                      <span>{suggestion.title}</span>
-                    </CommandItem>
-                  ))}
-                </CommandGroup>
-              )}
-            </CommandList>
-          </Command>
-        </CommandDialog>
+
+            {filteredSuggestions.length > 0 && (
+              <div className="p-2 max-h-60 overflow-y-auto">
+                <div className="text-xs font-medium text-muted-foreground px-2 py-1.5">
+                  Quick Links
+                </div>
+                {filteredSuggestions.map((suggestion) => (
+                  <button
+                    key={suggestion.id}
+                    onClick={() => handleSuggestionSelect(suggestion.url)}
+                    className="flex w-full items-center rounded-sm px-2 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground cursor-pointer text-left"
+                  >
+                    <Search className="mr-2 h-4 w-4" />
+                    {suggestion.title}
+                  </button>
+                ))}
+              </div>
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
 
-      {/* Desktop Search Suggestions Popover */}
+      {/* Desktop Search Suggestions */}
       {isExpanded && searchQuery && filteredSuggestions.length > 0 && (
-        <div className="absolute top-16 right-4 z-50 w-80">
+        <div className="absolute top-16 right-4 z-50 w-80 animate-in fade-in-0 zoom-in-95">
           <div className="bg-popover text-popover-foreground rounded-md border shadow-md">
             <div className="p-2">
               <div className="text-xs font-medium text-muted-foreground px-2 py-1.5">
@@ -176,37 +183,5 @@ export function SearchBar() {
         </div>
       )}
     </>
-  );
-}
-
-// Simplified version without command components
-export function SimpleSearchBar() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const router = useRouter();
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      router.push(`/search?q=${encodeURIComponent(searchQuery)}`);
-      setSearchQuery('');
-    }
-  };
-
-  return (
-    <form onSubmit={handleSearch} className="flex items-center gap-2">
-      <div className="relative">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-        <Input
-          type="text"
-          placeholder="Search..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="pl-9 pr-4 w-48 md:w-64"
-        />
-      </div>
-      <Button type="submit" size="sm" variant="ghost">
-        Search
-      </Button>
-    </form>
   );
 }

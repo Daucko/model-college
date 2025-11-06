@@ -129,19 +129,19 @@ export default function AboutPage() {
               // onClick={() => handleCardClick(card.href)}
             >
               <CardHeader className="flex flex-col items-center text-center pb-4">
-                <div className="text-orange-500 mb-4">
-                  <card.icon className="h-12 w-12 text-orange-500" />
+                <div className="text-accent mb-4">
+                  <card.icon className="h-12 w-12 text-accent" />
                 </div>
                 <CardTitle className="text-primary dark:text-blue-300 text-xl">
                   {card.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex flex-col grow">
-                <CardDescription className="text-primary dark:text-gray-400 text-sm leading-normal grow">
+                <CardDescription className="text-secondary dark:text-gray-400 text-sm leading-normal grow">
                   {card.description}
                 </CardDescription>
                 <Button
-                  className="mt-6 w-full bg-orange-500 hover:bg-orange-600 text-white"
+                  className="mt-6 w-full bg-accent hover:bg-orange-600 text-white"
                   // onClick={(e) => {
                   //   e.stopPropagation();
                   //   handleCardClick(card.href);
@@ -157,20 +157,20 @@ export default function AboutPage() {
       </div>
 
       {/* Additional Information Section */}
-      <div className="bg-white dark:bg-gray-800 py-16">
+      <div className="bg-white/80 dark:bg-gray-800 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-primary dark:text-white text-3xl font-bold mb-6">
+              <h2 className="text-primary dark:text-blue-300 text-3xl font-bold mb-6">
                 Why Choose Model College?
               </h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="bg-accent/20 p-2 rounded-lg">
-                    <School className="h-6 w-6 text-orange-500" />
+                    <School className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-primary dark:text-white font-semibold">
+                    <h3 className="text-primary dark:text-blue-300 font-semibold">
                       Comprehensive Education
                     </h3>
                     <p className="text-primary dark:text-gray-400 text-sm mt-1">
@@ -181,10 +181,10 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="bg-accent/20 p-2 rounded-lg">
-                    <Users className="h-6 w-6 text-orange-500" />
+                    <Users className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-primary dark:text-white font-semibold">
+                    <h3 className="text-primary dark:text-blue-300 font-semibold">
                       Experienced Faculty
                     </h3>
                     <p className="text-primary dark:text-gray-400 text-sm mt-1">
@@ -195,10 +195,10 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="bg-accent/20 p-2 rounded-lg">
-                    <Building className="h-6 w-6 text-orange-500" />
+                    <Building className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-primary dark:text-white font-semibold">
+                    <h3 className="text-primary dark:text-blue-300 font-semibold">
                       Modern Infrastructure
                     </h3>
                     <p className="text-primary dark:text-gray-400 text-sm mt-1">
@@ -210,7 +210,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="bg-gray-100 dark:bg-gray-700 rounded-lg p-8">
-              <h3 className="text-primary dark:text-white text-2xl font-bold mb-4">
+              <h3 className="text-primary dark:text-blue-300 text-2xl font-bold mb-4">
                 Our Commitment
               </h3>
               <p className="text-primary dark:text-gray-300 mb-6">
@@ -221,7 +221,7 @@ export default function AboutPage() {
               </p>
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="bg-white dark:bg-gray-600 p-4 rounded-lg">
-                  <div className="text-primary dark:text-white text-2xl font-bold">
+                  <div className="text-primary dark:text-blue-300 text-2xl font-bold">
                     1000+
                   </div>
                   <div className="text-primary dark:text-gray-400 text-sm">
@@ -229,7 +229,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="bg-white dark:bg-gray-600 p-4 rounded-lg">
-                  <div className="text-primary dark:text-white text-2xl font-bold">
+                  <div className="text-primary dark:text-blue-300 text-2xl font-bold">
                     50+
                   </div>
                   <div className="text-primary dark:text-gray-400 text-sm">
@@ -237,7 +237,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="bg-white dark:bg-gray-600 p-4 rounded-lg">
-                  <div className="text-primary dark:text-white text-2xl font-bold">
+                  <div className="text-primary dark:text-blue-300 text-2xl font-bold">
                     15+
                   </div>
                   <div className="text-primary dark:text-gray-400 text-sm">
@@ -245,7 +245,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="bg-white dark:bg-gray-600 p-4 rounded-lg">
-                  <div className="text-primary dark:text-white text-2xl font-bold">
+                  <div className="text-primary dark:text-blue-300 text-2xl font-bold">
                     10+
                   </div>
                   <div className="text-primary dark:text-gray-400 text-sm">

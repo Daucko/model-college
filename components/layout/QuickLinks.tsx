@@ -1,15 +1,15 @@
-import Link from 'next/link'
-import { FileText, LogIn, Phone } from 'lucide-react'
+import Link from 'next/link';
+import { FileText, LogIn, Phone } from 'lucide-react';
 
 export function QuickLinks() {
   const quickLinks = [
     { href: '/admissions', icon: FileText, label: 'Admissions' },
     { href: '/portal', icon: LogIn, label: 'Portal Login' },
     { href: '/contact-us', icon: Phone, label: 'Contact Us' },
-  ]
+  ];
 
   return (
-    <div className="bg-primary text-primary-foreground py-2">
+    <div className="bg-primary text-primary-foreground py-3">
       <div className="container">
         <div className="flex justify-center items-center gap-6">
           {quickLinks.map((link) => (
@@ -25,5 +25,5 @@ export function QuickLinks() {
         </div>
       </div>
     </div>
-  )
+  );
 }
