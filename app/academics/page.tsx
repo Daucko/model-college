@@ -99,7 +99,7 @@ export default function AcademicsPage() {
           <div className="max-w-4xl mx-auto">
             {/* Page Heading */}
             <div className="flex flex-col gap-4 text-center mb-12">
-              <h1 className="text-primary text-4xl md:text-5xl font-black leading-tight tracking-tight">
+              <h1 className="text-primary dark:text-blue-300 text-4xl md:text-5xl font-black leading-tight tracking-tight">
                 Academics
               </h1>
               <p className="text-muted-foreground text-lg font-normal leading-normal max-w-3xl mx-auto">
@@ -130,7 +130,7 @@ export default function AcademicsPage() {
                   <CardContent className="mt-auto">
                     <Button
                       asChild
-                      className="w-full bg-orange-500 hover:bg-orange-500/90"
+                      className="w-full bg-accent hover:bg-accent/90"
                     >
                       <a href={section.href}>
                         <span>Learn More</span>
@@ -144,7 +144,7 @@ export default function AcademicsPage() {
 
             {/* Key Resources Section */}
             <div className="text-center">
-              <h2 className="text-primary text-3xl font-bold leading-tight tracking-tight mb-8">
+              <h2 className="text-primary dark:text-blue-300 text-3xl font-bold leading-tight tracking-tight mb-8">
                 Key Resources
               </h2>
 
@@ -154,7 +154,7 @@ export default function AcademicsPage() {
                   <Link href="/academics/departments" className="block p-3">
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
-                        <GraduationCap className="size-10 text-orange-500" />
+                        <GraduationCap className="size-10 text-accent" />
                         <CardTitle className="text-xl">
                           Our Departments
                         </CardTitle>
@@ -170,7 +170,7 @@ export default function AcademicsPage() {
                           <Badge
                             key={dept.id}
                             variant="secondary"
-                            className="text-xs hover:bg-primary/20 transition-colors"
+                            className="text-xs text-primary dark:text-blue-300 bg-primary/10 transition-colors p-2 hover:bg-accent"
                           >
                             {dept.name}
                           </Badge>
@@ -184,7 +184,7 @@ export default function AcademicsPage() {
                 <Card className="group cursor-pointer transition-colors hover:border-accent">
                   <Link href="/academics/calendar" className="block p-6">
                     <div className="flex items-center gap-3 mb-2">
-                      <Calendar className="h-8 w-8 text-orange-500" />
+                      <Calendar className="h-8 w-8 text-accent" />
                       <CardTitle className="text-xl">
                         Academic Calendar
                       </CardTitle>

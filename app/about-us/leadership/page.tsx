@@ -131,7 +131,7 @@ export default function LeadershipTeam() {
 
         {/* Page Header & Intro */}
         <div className="text-center mb-12 md:mb-16">
-          <h1 className="text-primary text-4xl md:text-5xl font-black leading-tight tracking-tight">
+          <h1 className="text-primary dark:text-blue-300 text-4xl md:text-5xl font-black leading-tight tracking-tight">
             Our Leadership Team
           </h1>
           <p className="text-base font-normal leading-normal mt-4 max-w-3xl mx-auto text-muted-foreground">
@@ -143,7 +143,7 @@ export default function LeadershipTeam() {
 
         {/* Board of Directors Section */}
         <section className="mb-16">
-          <h2 className="text-primary text-2xl md:text-3xl font-bold leading-tight tracking-tight mb-8 text-center">
+          <h2 className="text-primary dark:text-blue-300 text-2xl md:text-3xl font-bold leading-tight tracking-tight mb-8 text-center">
             Board of Directors
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -155,7 +155,7 @@ export default function LeadershipTeam() {
 
         {/* Senior Academic Leadership Section */}
         <section>
-          <h2 className="text-primary text-2xl md:text-3xl font-bold leading-tight tracking-tight mb-8 text-center">
+          <h2 className="text-primary dark:text-blue-300 text-2xl md:text-3xl font-bold leading-tight tracking-tight mb-8 text-center">
             Senior Academic Leadership
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -173,7 +173,7 @@ export default function LeadershipTeam() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-primary mt-0.5" />
+                <MapPin className="h-5 w-5 text-primary dark:text-blue-300 mt-0.5" />
                 <div>
                   <p className="font-semibold">Address</p>
                   <p className="text-muted-foreground">
@@ -182,14 +182,14 @@ export default function LeadershipTeam() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-primary mt-0.5" />
+                <Phone className="h-5 w-5 text-primary dark:text-blue-300 mt-0.5" />
                 <div>
                   <p className="font-semibold">Phone</p>
                   <p className="text-muted-foreground">(123) 456-7890</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-primary mt-0.5" />
+                <Mail className="h-5 w-5 text-primary dark:text-blue-300 mt-0.5" />
                 <div>
                   <p className="font-semibold">Email</p>
                   <p className="text-muted-foreground">info@modelcollege.edu</p>

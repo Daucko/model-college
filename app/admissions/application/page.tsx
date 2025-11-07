@@ -182,7 +182,7 @@ Submitted on: ${new Date().toLocaleDateString()}
             href="/"
             className="flex items-center gap-1 text-text-primary/70 hover:text-primary dark:text-white/60 dark:hover:text-primary"
           >
-            <Home className="h-4 w-4" />
+            {/* <Home className="h-4 w-4" /> */}
             Home
           </Link>
           <ChevronRight className="h-4 w-4 text-text-primary/50 dark:text-white/40" />
@@ -200,7 +200,7 @@ Submitted on: ${new Date().toLocaleDateString()}
 
         {/* Page Heading */}
         <div className="mb-8">
-          <h1 className="text-4xl font-black tracking-tighter text-text-primary dark:text-white sm:text-5xl">
+          <h1 className="text-4xl font-black tracking-tighter text-primary sm:text-5xl">
             Application Form
           </h1>
           <p className="mt-4 max-w-3xl text-base text-text-primary/80 dark:text-white/70">
@@ -264,7 +264,7 @@ Submitted on: ${new Date().toLocaleDateString()}
           <div className="space-y-8">
             <div className="flex items-center gap-4">
               <hr className="flex-1 border-t border-border-light dark:border-gray-700" />
-              <h2 className="text-2xl font-bold tracking-tight text-text-primary dark:text-white">
+              <h2 className="text-2xl font-bold tracking-tight text-primary">
                 Online Application
               </h2>
               <hr className="flex-1 border-t border-border-light dark:border-gray-700" />
@@ -273,7 +273,7 @@ Submitted on: ${new Date().toLocaleDateString()}
             {/* Instructions */}
             <Card className="border-l-4 border-l-primary bg-primary/10 dark:bg-primary/20">
               <CardContent className="p-4">
-                <p className="text-sm text-primary dark:text-white/90">
+                <p className="text-sm text-primary">
                   Need help?{' '}
                   <a className="font-semibold underline hover:no-underline cursor-pointer">
                     View Instructions

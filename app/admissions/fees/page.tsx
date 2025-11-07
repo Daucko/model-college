@@ -87,7 +87,7 @@ export default function FeeStructure() {
         </p>
 
         {/* Tabs */}
-        <div className="py-3 px-4 mt-6">
+        <div className="py-3 px-4 mt-6 ">
           <div className="flex border-b border-black/10 dark:border-white/10 gap-8">
             <button
               onClick={() => setActiveTab('primary')}
@@ -122,14 +122,14 @@ export default function FeeStructure() {
             <div className="overflow-x-auto">
               <table className="w-full text-left">
                 <thead className="bg-primary/10 dark:bg-primary/20">
-                  <tr>
-                    <th className="p-4 text-sm font-bold text-primary uppercase tracking-wider">
+                  <tr className="">
+                    <th className="p-4 text-sm font-bold text-primary  dark:text-blue-300 uppercase tracking-wider">
                       Fee Component
                     </th>
-                    <th className="p-4 text-sm font-bold text-primary uppercase tracking-wider text-center">
+                    <th className="p-4 text-sm font-bold text-primary dark:text-blue-300 uppercase tracking-wider text-center">
                       Frequency
                     </th>
-                    <th className="p-4 text-sm font-bold text-primary uppercase tracking-wider text-right">
+                    <th className="p-4 text-sm font-bold text-primary dark:text-blue-300 uppercase tracking-wider text-right">
                       Amount (USD)
                     </th>
                   </tr>

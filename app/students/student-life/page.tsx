@@ -105,7 +105,7 @@ export default function StudentLife() {
 
           {/* Page Heading */}
           <div className="mb-6">
-            <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-black text-primary leading-tight tracking-tight">
               Student Life
             </h1>
           </div>

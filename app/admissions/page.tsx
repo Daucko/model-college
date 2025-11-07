@@ -95,7 +95,7 @@ export default function Admissions() {
         {/* Page Heading */}
         <div className="flex flex-wrap justify-between gap-3 p-4">
           <div className="flex flex-col gap-3">
-            <h1 className="text-primary text-4xl md:text-5xl font-black leading-tight tracking-tight">
+            <h1 className="text-primary dark:text-blue-300 text-4xl md:text-5xl font-black leading-tight tracking-tight">
               Admissions
             </h1>
             <p className="text-foreground/80 text-base font-normal leading-normal max-w-3xl">
@@ -129,7 +129,7 @@ export default function Admissions() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-white"
+                className="bg-primary dark:bg-blue-300 hover:bg-primary/90 text-white"
                 asChild
               >
                 <a href="#">Apply Now</a>
@@ -137,7 +137,7 @@ export default function Admissions() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary/10"
+                className="border-primary text-primary dark:text-blue-300 hover:bg-primary/10"
                 asChild
               >
                 <a href="#">Contact Admissions</a>
@@ -149,7 +149,7 @@ export default function Admissions() {
         {/* Contact Information */}
         <Card className="mt-8">
           <CardContent className="p-8">
-            <h3 className="text-2xl font-bold text-primary mb-6">
+            <h3 className="text-2xl font-bold text-primary dark:text-blue-300 mb-6">
               Admissions Office
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -194,7 +194,7 @@ function AdmissionCard({ card }: { card: AdmissionCard }) {
         </p>
         <Button
           variant="outline"
-          className="w-full bg-primary/20 text-primary hover:bg-primary/30 border-primary/30"
+          className="w-full bg-primary/20 text-primary dark:text-blue-300 hover:bg-primary/30 border-primary/30"
           asChild
         >
           <a href={card.href}>{card.buttonText}</a>

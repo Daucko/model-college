@@ -25,10 +25,10 @@ export default function EligibilityCriteria() {
   const eligibilitySections = [
     {
       title: 'KG & Nursery Section',
-      color: 'text-primary',
+      color: 'text-primary dark:text-blue-300',
       content: (
         <>
-          <p>
+          <p className="text-muted-foreground">
             Admission to our early years program is based on age and readiness
             for a structured learning environment. We focus on a holistic
             approach to welcome our youngest learners.
@@ -202,10 +202,10 @@ export default function EligibilityCriteria() {
         {/* Page Heading */}
         <div className="flex flex-wrap justify-between gap-3 p-4 mb-8">
           <div className="flex min-w-72 flex-col gap-3">
-            <h1 className="text-primary text-4xl font-black leading-tight tracking-tight">
+            <h1 className="text-primary dark:text-blue-300 text-4xl font-black leading-tight tracking-tight">
               Eligibility Criteria
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 text-base font-normal leading-normal">
+            <p className="text-foreground/80 text-base font-normal leading-normal">
               Find out the admission requirements for each school section to
               begin your journey with us. Our criteria ensure that all students
               are well-prepared for our academic environment.
@@ -216,17 +216,14 @@ export default function EligibilityCriteria() {
         {/* Eligibility Accordions */}
         <div className="flex flex-col p-4 gap-4">
           {eligibilitySections.map((section, index) => (
-            <Card
-              key={index}
-              className="border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark/50"
-            >
+            <Card key={index} className="">
               <CardContent className="p-0">
                 <button
                   onClick={() => toggleSection(index)}
                   className="flex w-full cursor-pointer items-center justify-between gap-6 p-4 list-none"
                 >
                   <p
-                    className={`${section.color} text-lg font-bold leading-normal text-left`}
+                    className={`${section.color} text-lg font-bold leading-normal text-left `}
                   >
                     {section.title}
                   </p>
@@ -237,7 +234,7 @@ export default function EligibilityCriteria() {
                   />
                 </button>
                 {openSections.includes(index) && (
-                  <div className="px-4 pb-4 text-gray-600 dark:text-gray-300 text-sm font-normal leading-relaxed space-y-3">
+                  <div className="px-4 pb-4 text-foreground/80 text-sm font-normal leading-relaxed space-y-3">
                     {section.content}
                   </div>
                 )}
@@ -257,19 +254,22 @@ export default function EligibilityCriteria() {
             reach out to our admissions office.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button className="h-12 px-6 bg-orange-500 hover:bg-orange-600 text-white text-base font-bold">
+            <Button className="h-12 px-6 bg-accent hover:bg-accent/80 text-white text-base font-bold">
               Apply Now
             </Button>
             <Button
               variant="outline"
-              className="h-12 px-6 bg-primary/20 text-primary hover:bg-primary/30 dark:bg-primary/30 dark:text-white dark:hover:bg-primary/40"
+              className="h-12 px-6 bg-primary/20 text-foreground/80 hover:bg-primary/30 dark:bg-primary/30 dark:text-white dark:hover:bg-primary/40"
             >
               Contact Admissions
             </Button>
           </div>
           <p className="text-center text-sm text-gray-600 dark:text-gray-400 mt-6">
             Have more questions? Check out our{' '}
-            <a className="text-primary font-medium underline" href="#">
+            <a
+              className="text-primary dark:text-blue-300 font-medium underline"
+              href="#"
+            >
               FAQ page
             </a>
             .

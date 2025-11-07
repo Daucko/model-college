@@ -97,7 +97,7 @@ export default function PrimarySectionPage() {
             >
               <AccordionItem value="curriculum" className="border rounded-lg">
                 <AccordionTrigger className="px-4 py-2 hover:no-underline hover:bg-muted/50">
-                  <span className="text-primary text-base font-bold">
+                  <span className="text-primary dark:text-blue-300 text-base font-bold">
                     Curriculum Overview
                   </span>
                 </AccordionTrigger>
@@ -196,7 +196,7 @@ export default function PrimarySectionPage() {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
                   <div>
-                    <CardTitle className="text-xl text-primary dark:text-white">
+                    <CardTitle className="text-xl text-primary dark:text-blue-300">
                       Ready to Learn More?
                     </CardTitle>
                     <CardDescription className="mt-1 text-gray-600 dark:text-gray-300">
@@ -214,7 +214,7 @@ export default function PrimarySectionPage() {
                     </Button>
                     <Button
                       onClick={handleAdmissionsClick}
-                      className="bg-primary hover:bg-primary/90 h-12 px-6 min-w-40"
+                      className="bg-primary dark:bg-blue-300 hover:bg-primary/90 h-12 px-6 min-w-40"
                     >
                       <GraduationCap className="size-6" />
                       Admissions

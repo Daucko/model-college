@@ -86,7 +86,7 @@ export default function AccreditationAndAffiliations() {
 
         {/* Page Header */}
         <div className="flex flex-wrap justify-between gap-3 p-4">
-          <h1 className="text-primary text-4xl font-black leading-tight tracking-tight min-w-72">
+          <h1 className="text-primary dark:text-blue-300 text-4xl font-black leading-tight tracking-tight min-w-72">
             Accreditation & Affiliations
           </h1>
         </div>
@@ -102,7 +102,7 @@ export default function AccreditationAndAffiliations() {
 
         {/* Accreditations Section */}
         <section className="mt-8">
-          <h2 className="text-primary text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-5 border-b-2 border-orange-500/50">
+          <h2 className="text-primary dark:text-blue-300 text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-5 border-b-2 border-orange-500/50">
             Accreditations
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-4">
@@ -114,7 +114,7 @@ export default function AccreditationAndAffiliations() {
 
         {/* Affiliations Section */}
         <section className="mt-8">
-          <h2 className="text-primary text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-5 border-b-2 border-orange-500/50">
+          <h2 className="text-primary dark:text-blue-300 text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-5 border-b-2 border-orange-500/50">
             Affiliations
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-4">
@@ -146,7 +146,7 @@ export default function AccreditationAndAffiliations() {
               <Button
                 size="lg"
                 variant="secondary"
-                className="bg-white hover:bg-white/90 text-primary"
+                className="bg-white hover:bg-white/90 text-primary dark:text-blue-300"
                 asChild
               >
                 <a href="#">View Our Programs</a>

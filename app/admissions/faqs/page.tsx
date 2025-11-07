@@ -105,7 +105,7 @@ export default function FAQs() {
         <div className="mb-10">
           <div className="flex flex-wrap justify-between gap-3">
             <div className="flex flex-col gap-2">
-              <h1 className="text-brand-blue text-4xl font-black tracking-tighter">
+              <h1 className="text-primary text-4xl font-black tracking-tighter">
                 Frequently Asked Questions
               </h1>
               <p className="text-[#616f89] dark:text-gray-400 text-base font-normal">

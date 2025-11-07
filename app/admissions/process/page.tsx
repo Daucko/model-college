@@ -143,7 +143,7 @@ export default function AdmissionsProcess() {
         {/* Page Heading */}
         <div className="flex flex-wrap justify-between gap-3 mb-8">
           <div className="flex flex-col gap-3">
-            <h1 className="text-4xl font-black leading-tight tracking-tight text-foreground">
+            <h1 className="text-4xl text-primary dark:text-blue-300 leading-tight tracking-tight text-foreground">
               Admissions Process
             </h1>
             <p className="max-w-3xl text-base font-normal leading-normal text-gray-600 dark:text-gray-400">
@@ -190,7 +190,7 @@ export default function AdmissionsProcess() {
                     )}
                   </div>
                   <div className="flex flex-1 flex-col pb-8">
-                    <p className="text-lg font-semibold leading-normal text-foreground">
+                    <p className="text-lg font-semibold leading-normal text-primary dark:text-blue-300">
                       {step.title}
                     </p>
                     <p className="mt-1 text-base font-normal leading-normal text-gray-600 dark:text-gray-400">
@@ -199,7 +199,7 @@ export default function AdmissionsProcess() {
                     {step.step === 2 && (
                       <Button
                         variant="outline"
-                        className="mt-4 max-w-max gap-2"
+                        className="mt-4 max-w-max gap-2 cursor-pointer"
                       >
                         <Download className="h-4 w-4" />
                         Download Form
@@ -219,13 +219,15 @@ export default function AdmissionsProcess() {
             {/* Document Checklist */}
             <Card>
               <CardHeader>
-                <CardTitle>Document Checklist</CardTitle>
+                <CardTitle className="text-primary dark:text-blue-300">
+                  Document Checklist
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   {documents.map((doc, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-primary dark:text-blue-300 mt-0.5" />
                       <span className="text-sm">{doc}</span>
                     </li>
                   ))}
@@ -236,7 +238,9 @@ export default function AdmissionsProcess() {
             {/* Important Dates */}
             <Card>
               <CardHeader>
-                <CardTitle>Important Dates</CardTitle>
+                <CardTitle className="text-primary dark:text-blue-300">
+                  Important Dates
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
@@ -266,7 +270,7 @@ export default function AdmissionsProcess() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 border-t border-gray-200 dark:border-gray-700">
           {/* FAQ */}
           <div>
-            <h2 className="text-2xl font-bold mb-4 text-foreground">
+            <h2 className="text-2xl font-bold mb-4 text-primary dark:text-blue-300">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
@@ -307,12 +311,16 @@ export default function AdmissionsProcess() {
               </p>
               <div className="mt-4 space-y-3">
                 <p className="flex items-center gap-3 font-medium text-primary">
-                  <Phone className="h-5 w-5" />
-                  <span>+1 (123) 456-7890</span>
+                  <Phone className="h-5 w-5 text-primary dark:text-blue-300" />
+                  <span className="text-primary dark:text-blue-300">
+                    +1 (123) 456-7890
+                  </span>
                 </p>
                 <p className="flex items-center gap-3 font-medium text-primary">
-                  <Mail className="h-5 w-5" />
-                  <span>admissions@modelcollege.edu</span>
+                  <Mail className="h-5 w-5 text-primary dark:text-blue-300" />
+                  <span className="text-primary dark:text-blue-300">
+                    admissions@modelcollege.edu
+                  </span>
                 </p>
               </div>
             </CardContent>

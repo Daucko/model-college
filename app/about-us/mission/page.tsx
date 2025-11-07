@@ -99,7 +99,7 @@ export default function MissionAndVision() {
                     <Shield className="h-5 w-5 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg text-primary">
+                    <h3 className="font-bold text-lg text-primary dark:text-blue-300">
                       Integrity
                     </h3>
                     <p className="text-muted-foreground text-sm mt-1">
@@ -116,7 +116,7 @@ export default function MissionAndVision() {
                     <Award className="h-5 w-5 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg text-primary">
+                    <h3 className="font-bold text-lg text-primary dark:text-blue-300">
                       Excellence
                     </h3>
                     <p className="text-muted-foreground text-sm mt-1">
@@ -133,7 +133,7 @@ export default function MissionAndVision() {
                     <Users className="h-5 w-5 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg text-primary">
+                    <h3 className="font-bold text-lg text-primary dark:text-blue-300">
                       Community
                     </h3>
                     <p className="text-muted-foreground text-sm mt-1">
@@ -150,7 +150,9 @@ export default function MissionAndVision() {
                     <Handshake className="h-5 w-5 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg text-primary">Respect</h3>
+                    <h3 className="font-bold text-lg text-primary dark:text-blue-300">
+                      Respect
+                    </h3>
                     <p className="text-muted-foreground text-sm mt-1">
                       Promoting a culture of mutual respect, empathy, and
                       understanding among all members.

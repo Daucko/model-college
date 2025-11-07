@@ -117,7 +117,7 @@ export function Announcements() {
             <div className="mt-4">
               <Link
                 href="/news-events"
-                className="text-sm text-primary hover:underline font-medium inline-flex items-center gap-1"
+                className="text-sm text-primary dark:text-blue-300 hover:underline font-medium inline-flex items-center gap-1"
               >
                 View all announcements
                 <span>→</span>
@@ -164,7 +164,7 @@ export function Announcements() {
             <div className="mt-4">
               <Link
                 href="/events"
-                className="text-sm text-primary hover:underline font-medium inline-flex items-center gap-1"
+                className="text-sm text-primary dark:text-blue-300 hover:underline font-medium inline-flex items-center gap-1"
               >
                 View full calendar
                 <span>→</span>

@@ -110,7 +110,7 @@ export default function SecondarySectionPage() {
 
           {/* Page Header */}
           <div className="flex flex-wrap justify-between gap-3 p-4">
-            <h1 className="text-primary dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">
+            <h1 className="text-primary dark:text-blue-300 text-4xl md:text-5xl font-black leading-tight tracking-tight">
               Secondary Section
             </h1>
           </div>
@@ -141,7 +141,7 @@ export default function SecondarySectionPage() {
                   <AccordionTrigger className="px-5 py-3 hover:no-underline hover:bg-muted/50 rounded-xl">
                     <div className="flex items-center gap-4 flex-1 text-left">
                       <item.icon className="h-7 w-7 text-orange-500 shrink-0" />
-                      <span className="text-primary dark:text-white text-lg font-semibold">
+                      <span className="text-primary dark:text-blue-300 text-lg font-semibold">
                         {item.title}
                       </span>
                     </div>
@@ -160,7 +160,7 @@ export default function SecondarySectionPage() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-4 mt-8">
             <Button
               onClick={handleDownloadProspectus}
-              className="w-full md:w-auto h-12 px-6 bg-primary hover:bg-primary/90 text-white text-base font-bold"
+              className="w-full md:w-auto h-12 px-6 bg-primary dark:bg-blue-300 hover:bg-primary/90 text-white text-base font-bold"
               size="lg"
             >
               <Download className="mr-2 h-5 w-5" />
@@ -168,7 +168,7 @@ export default function SecondarySectionPage() {
             </Button>
             <Button
               onClick={handleContactAdvisor}
-              className="w-full md:w-auto h-12 px-6 bg-orange-500 hover:bg-orange-500/90 text-primary text-base font-bold"
+              className="w-full md:w-auto h-12 px-6 bg-orange-500 hover:bg-orange-500/90 text-primary dark:text-blue-300 text-base font-bold"
               variant="secondary"
               size="lg"
             >
@@ -181,7 +181,7 @@ export default function SecondarySectionPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 p-4">
             <Card className="bg-white dark:bg-slate-800/50 border-border-light dark:border-border-dark">
               <CardHeader>
-                <CardTitle className="text-primary dark:text-white flex items-center gap-2">
+                <CardTitle className="text-primary dark:text-blue-300 flex items-center gap-2">
                   <Users className="h-5 w-5" />
                   Grade Levels
                 </CardTitle>
@@ -196,7 +196,7 @@ export default function SecondarySectionPage() {
 
             <Card className="bg-white dark:bg-slate-800/50 border-border-light dark:border-border-dark">
               <CardHeader>
-                <CardTitle className="text-primary dark:text-white flex items-center gap-2">
+                <CardTitle className="text-primary dark:text-blue-300 flex items-center gap-2">
                   <Network className="h-5 w-5" />
                   Stream Options
                 </CardTitle>
@@ -211,7 +211,7 @@ export default function SecondarySectionPage() {
 
             <Card className="bg-white dark:bg-slate-800/50 border-border-light dark:border-border-dark">
               <CardHeader>
-                <CardTitle className="text-primary dark:text-white flex items-center gap-2">
+                <CardTitle className="text-primary dark:text-blue-300 flex items-center gap-2">
                   <CheckCircle className="h-5 w-5" />
                   Assessment
                 </CardTitle>

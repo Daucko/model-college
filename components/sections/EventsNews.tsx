@@ -114,7 +114,7 @@ export function EventsNews() {
                       className="flex items-start gap-4 p-4"
                     >
                       {/* Date Badge */}
-                      <div className="text-center font-bold text-primary shrink-0 min-w-16">
+                      <div className="text-center font-bold text-primary dark:text-blue-300 shrink-0 min-w-16">
                         <p className="text-2xl leading-none">{event.date}</p>
                         <p className="text-xs uppercase tracking-wider text-muted-foreground">
                           {event.month}
@@ -208,7 +208,7 @@ export function EventsNews() {
 
                     <CardContent className="p-6">
                       {/* Date */}
-                      <p className="text-sm text-primary font-medium mb-2">
+                      <p className="text-sm text-primary dark:text-blue-300 font-medium mb-2">
                         {news.date}
                       </p>
 
@@ -270,7 +270,7 @@ export function EventsNews() {
         {/* Quick Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center p-6 bg-muted/50 rounded-lg">
-            <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+            <div className="text-2xl md:text-3xl font-bold text-primary dark:text-blue-300 mb-2">
               50+
             </div>
             <div className="text-sm text-muted-foreground">
@@ -278,19 +278,19 @@ export function EventsNews() {
             </div>
           </div>
           <div className="text-center p-6 bg-muted/50 rounded-lg">
-            <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+            <div className="text-2xl md:text-3xl font-bold text-primary dark:text-blue-300 mb-2">
               200+
             </div>
             <div className="text-sm text-muted-foreground">News Articles</div>
           </div>
           <div className="text-center p-6 bg-muted/50 rounded-lg">
-            <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+            <div className="text-2xl md:text-3xl font-bold text-primary dark:text-blue-300 mb-2">
               15+
             </div>
             <div className="text-sm text-muted-foreground">Awards Won</div>
           </div>
           <div className="text-center p-6 bg-muted/50 rounded-lg">
-            <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+            <div className="text-2xl md:text-3xl font-bold text-primary dark:text-blue-300 mb-2">
               1000+
             </div>
             <div className="text-sm text-muted-foreground">
@@ -321,12 +321,12 @@ export function CompactEventsNews() {
                   href={event.href}
                   className="flex items-center gap-4 p-4 rounded-lg border hover:shadow-md transition-all group"
                 >
-                  <div className="text-center font-bold text-primary shrink-0">
+                  <div className="text-center font-bold text-primary dark:text-blue-300 shrink-0">
                     <p className="text-xl">{event.date}</p>
                     <p className="text-xs uppercase">{event.month}</p>
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold group-hover:text-primary transition-colors">
+                    <h3 className="font-semibold group-hover:text-primary dark:text-blue-300 transition-colors">
                       {event.title}
                     </h3>
                     <p className="text-sm text-muted-foreground">

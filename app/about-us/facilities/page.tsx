@@ -146,7 +146,7 @@ export default function FacilitiesAndInfrastructure() {
               </span>
             </div>
             <div className="flex flex-col gap-3">
-              <h1 className="text-primary text-4xl md:text-5xl font-black leading-tight tracking-tight">
+              <h1 className="text-primary dark:text-blue-300 text-4xl md:text-5xl font-black leading-tight tracking-tight">
                 Facilities & Infrastructure
               </h1>
               <p className="max-w-3xl text-muted-foreground text-base font-normal leading-normal">
@@ -196,7 +196,7 @@ export default function FacilitiesAndInfrastructure() {
               </p>
               <Button
                 size="lg"
-                className="mt-4 bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/30"
+                className="mt-4 bg-primary dark:bg-blue-300 hover:bg-primary/90 text-white shadow-lg shadow-primary/30"
               >
                 Schedule a Campus Tour
               </Button>
@@ -206,12 +206,12 @@ export default function FacilitiesAndInfrastructure() {
           {/* Contact Info */}
           <Card>
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-primary mb-6">
+              <h3 className="text-2xl font-bold text-primary dark:text-blue-300 mb-6">
                 Visit Our Campus
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="h-5 w-5 text-primary mt-0.5" />
+                  <MapPin className="h-5 w-5 text-primary dark:text-blue-300 mt-0.5" />
                   <div>
                     <p className="font-semibold">Address</p>
                     <p className="text-muted-foreground">
@@ -220,14 +220,14 @@ export default function FacilitiesAndInfrastructure() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Phone className="h-5 w-5 text-primary mt-0.5" />
+                  <Phone className="h-5 w-5 text-primary dark:text-blue-300 mt-0.5" />
                   <div>
                     <p className="font-semibold">Phone</p>
                     <p className="text-muted-foreground">(123) 456-7890</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Mail className="h-5 w-5 text-primary mt-0.5" />
+                  <Mail className="h-5 w-5 text-primary dark:text-blue-300 mt-0.5" />
                   <div>
                     <p className="font-semibold">Email</p>
                     <p className="text-muted-foreground">
@@ -278,7 +278,7 @@ function FacilitySection({ facility }: { facility: FacilitySection }) {
               src={image.src}
               alt={image.alt}
               className={`w-full rounded-lg object-cover ${
-                index === 0 ? 'aspect-[4/5]' : 'aspect-[4/5]'
+                index === 0 ? 'aspect-4/5' : 'aspect-4/5'
               }`}
             />
           ))
