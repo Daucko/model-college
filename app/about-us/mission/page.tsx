@@ -3,6 +3,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Shield, Award, Users, Handshake } from 'lucide-react';
+import Link from 'next/link';
 
 export default function MissionAndVision() {
   return (
@@ -177,15 +178,17 @@ export default function MissionAndVision() {
                 <Button
                   size="lg"
                   className="bg-accent hover:bg-accent/90 text-accent-foreground"
+                  asChild
                 >
-                  Apply Now
+                  <Link href="/admissions/application">Apply Now</Link>
                 </Button>
                 <Button
                   size="lg"
                   variant="secondary"
                   className="bg-background hover:bg-background/90 text-primary"
+                  asChild
                 >
-                  Learn More About Us
+                  <Link href="/about-us/history">Learn More About Us</Link>
                 </Button>
               </div>
             </div>

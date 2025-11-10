@@ -44,7 +44,7 @@ export default function UniformGuidelinesPage() {
 
             {/* Page Heading */}
             <div className="flex flex-wrap justify-between gap-3 mb-4">
-              <h1 className="text-foreground text-4xl lg:text-5xl font-black leading-tight tracking-tight min-w-72">
+              <h1 className="text-primary text-4xl lg:text-5xl font-black leading-tight tracking-tight min-w-72">
                 Uniform Guidelines
               </h1>
             </div>

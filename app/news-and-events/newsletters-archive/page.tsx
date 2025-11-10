@@ -371,7 +371,7 @@ export default function NewsAndEventsArchive() {
                       <p className="text-sm text-subtext-light dark:text-subtext-dark mb-4 grow">
                         {item.description}
                       </p>
-                      <a className="text-sm font-bold text-primary dark:text-secondary hover:underline cursor-pointer">
+                      <a className="text-sm font-bold text-primary hover:underline cursor-pointer">
                         Read More →
                       </a>
                     </CardContent>

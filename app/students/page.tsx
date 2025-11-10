@@ -46,7 +46,7 @@ export default function StudentsMainPage() {
       title: 'Code of Conduct',
       description:
         'Understand the school rules and expectations for all students.',
-      href: '#',
+      href: '/students/code-of-conduct',
     },
     {
       icon: House,

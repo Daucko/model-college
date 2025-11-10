@@ -198,7 +198,7 @@ export default function NewsAndEvents() {
                 placeholder="Search news and events..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10 bg-white dark:bg-text-dark/10 border-text-light/10 dark:border-text-dark/20"
+                className="pl-10 bg-white border-text-light/10 dark:border-text-dark/20"
               />
             </div>
           </div>
@@ -216,23 +216,20 @@ export default function NewsAndEvents() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
               {filteredNews.map((news) => (
-                <Card
-                  key={news.id}
-                  className="border-text-light/10 dark:border-text-dark/20 bg-white dark:bg-text-dark/10 overflow-hidden"
-                >
+                <Card key={news.id} className=" overflow-hidden">
                   <div
                     className="w-full bg-center bg-no-repeat aspect-video bg-cover"
                     style={{ backgroundImage: `url(${news.imageUrl})` }}
                     aria-label={news.imageAlt}
                   />
-                  <CardContent className="p-4 flex flex-col flex-grow">
+                  <CardContent className="p-4 flex flex-col grow">
                     <p className="text-sm text-text-muted-light dark:text-text-muted-dark mb-1">
                       {news.date}
                     </p>
                     <p className="text-text-light dark:text-text-dark text-base font-medium leading-normal">
                       {news.title}
                     </p>
-                    <p className="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1 flex-grow">
+                    <p className="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1 grow">
                       {news.description}
                     </p>
                     <a className="text-primary font-bold text-sm mt-3 inline-flex items-center gap-1 group cursor-pointer">
@@ -256,10 +253,7 @@ export default function NewsAndEvents() {
               </div>
               <div className="flex flex-col gap-4 p-4">
                 {upcomingEvents.map((event) => (
-                  <Card
-                    key={event.id}
-                    className="border-text-light/10 dark:border-text-dark/20 bg-white dark:bg-text-dark/10"
-                  >
+                  <Card key={event.id} className="">
                     <CardContent className="p-4 flex items-start gap-4">
                       <div className="flex flex-col items-center justify-center bg-primary/10 dark:bg-primary/20 text-primary font-bold p-3 rounded-lg min-w-12">
                         <span className="text-sm">{event.month}</span>
@@ -292,7 +286,7 @@ export default function NewsAndEvents() {
                   See Full Calendar
                 </Link>
               </div>
-              <Card className="border-text-light/10 dark:border-text-dark/20 bg-white dark:bg-text-dark/10">
+              <Card className="">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between mb-4">
                     <Button

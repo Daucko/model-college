@@ -12,6 +12,7 @@ import {
   GraduationCap,
   Users,
 } from 'lucide-react';
+import Link from 'next/link';
 
 interface AdmissionCard {
   title: string;
@@ -132,7 +133,7 @@ export default function Admissions() {
                 className="bg-primary dark:bg-blue-300 hover:bg-primary/90 text-white"
                 asChild
               >
-                <a href="#">Apply Now</a>
+                <Link href="/admissions/application">Apply Now</Link>
               </Button>
               <Button
                 size="lg"
@@ -140,7 +141,7 @@ export default function Admissions() {
                 className="border-primary text-primary dark:text-blue-300 hover:bg-primary/10"
                 asChild
               >
-                <a href="#">Contact Admissions</a>
+                <Link href="/contact-us">Contact Admissions</Link>
               </Button>
             </div>
           </CardContent>
